@@ -1,0 +1,11 @@
+# NpaPolicyResponseItem
+
+
+## Fields
+
+| Field                                                          | Type                                                           | Required                                                       | Description                                                    | Example                                                        |
+| -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| `GroupID`                                                      | **int64*                                                       | :heavy_minus_sign:                                             | N/A                                                            | 1                                                              |
+| `RuleData`                                                     | [*NpaPolicyRuleData](../../models/shared/npapolicyruledata.md) | :heavy_minus_sign:                                             | N/A                                                            |                                                                |
+| `RuleID`                                                       | **int64*                                                       | :heavy_minus_sign:                                             | N/A                                                            | 1                                                              |
+| `RuleName`                                                     | **string*                                                      | :heavy_minus_sign:                                             | N/A                                                            | van-test                                                       |
