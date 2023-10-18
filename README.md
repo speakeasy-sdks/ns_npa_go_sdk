@@ -7,7 +7,7 @@
 </div>
 
 <!-- Start SDK Installation -->
-# SDK Installation
+## SDK Installation
 
 ```bash
 go get github.com/speakeasy-sdks/ns_npa_go_sdk
@@ -16,8 +16,6 @@ go get github.com/speakeasy-sdks/ns_npa_go_sdk
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```go
 package main
 
@@ -51,9 +49,9 @@ func main() {
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-# Available Resources and Operations
+## Available Resources and Operations
 
-## [Platform SDK](docs/sdks/platform/README.md)
+### [Platform SDK](docs/sdks/platform/README.md)
 
 * [DeleteNpaRulesID](docs/sdks/platform/README.md#deletenparulesid) - Delete a npa policy
 * [GetNpaRules](docs/sdks/platform/README.md#getnparules) - Get list of npa policies
@@ -63,8 +61,6 @@ func main() {
 <!-- End SDK Available Operations -->
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 
