@@ -227,7 +227,7 @@ func main() {
                         Activities: []shared.NpaPolicyRuleDataPrivateAppsWithActivitiesActivities{
                             shared.NpaPolicyRuleDataPrivateAppsWithActivitiesActivities{
                                 ListOfConstraints: []string{
-                                    "Chevrolet",
+                                    "string",
                                 },
                             },
                         },
@@ -346,7 +346,7 @@ func main() {
                         Activities: []shared.NpaPolicyRuleDataPrivateAppsWithActivitiesActivities{
                             shared.NpaPolicyRuleDataPrivateAppsWithActivitiesActivities{
                                 ListOfConstraints: []string{
-                                    "woman",
+                                    "string",
                                 },
                             },
                         },
