@@ -30,18 +30,18 @@ func (o *GetNpaRulesIDRequest) GetID() int {
 	return o.ID
 }
 
-type GetNpaRulesID200ApplicationJSONStatus string
+type GetNpaRulesIDStatus string
 
 const (
-	GetNpaRulesID200ApplicationJSONStatusSuccess GetNpaRulesID200ApplicationJSONStatus = "success"
-	GetNpaRulesID200ApplicationJSONStatusError   GetNpaRulesID200ApplicationJSONStatus = "error"
+	GetNpaRulesIDStatusSuccess GetNpaRulesIDStatus = "success"
+	GetNpaRulesIDStatusError   GetNpaRulesIDStatus = "error"
 )
 
-func (e GetNpaRulesID200ApplicationJSONStatus) ToPointer() *GetNpaRulesID200ApplicationJSONStatus {
+func (e GetNpaRulesIDStatus) ToPointer() *GetNpaRulesIDStatus {
 	return &e
 }
 
-func (e *GetNpaRulesID200ApplicationJSONStatus) UnmarshalJSON(data []byte) error {
+func (e *GetNpaRulesIDStatus) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -50,27 +50,27 @@ func (e *GetNpaRulesID200ApplicationJSONStatus) UnmarshalJSON(data []byte) error
 	case "success":
 		fallthrough
 	case "error":
-		*e = GetNpaRulesID200ApplicationJSONStatus(v)
+		*e = GetNpaRulesIDStatus(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetNpaRulesID200ApplicationJSONStatus: %v", v)
+		return fmt.Errorf("invalid value for GetNpaRulesIDStatus: %v", v)
 	}
 }
 
-// GetNpaRulesID200ApplicationJSON - successful operation
-type GetNpaRulesID200ApplicationJSON struct {
-	Data   *shared.NpaPolicyResponseItem          `json:"data,omitempty"`
-	Status *GetNpaRulesID200ApplicationJSONStatus `json:"status,omitempty"`
+// GetNpaRulesIDResponseBody - successful operation
+type GetNpaRulesIDResponseBody struct {
+	Data   *shared.NpaPolicyResponseItem `json:"data,omitempty"`
+	Status *GetNpaRulesIDStatus          `json:"status,omitempty"`
 }
 
-func (o *GetNpaRulesID200ApplicationJSON) GetData() *shared.NpaPolicyResponseItem {
+func (o *GetNpaRulesIDResponseBody) GetData() *shared.NpaPolicyResponseItem {
 	if o == nil {
 		return nil
 	}
 	return o.Data
 }
 
-func (o *GetNpaRulesID200ApplicationJSON) GetStatus() *GetNpaRulesID200ApplicationJSONStatus {
+func (o *GetNpaRulesIDResponseBody) GetStatus() *GetNpaRulesIDStatus {
 	if o == nil {
 		return nil
 	}
@@ -85,7 +85,7 @@ type GetNpaRulesIDResponse struct {
 	// Raw HTTP response; suitable for custom response parsing
 	RawResponse *http.Response
 	// successful operation
-	GetNpaRulesID200ApplicationJSONObject *GetNpaRulesID200ApplicationJSON
+	Object *GetNpaRulesIDResponseBody
 }
 
 func (o *GetNpaRulesIDResponse) GetContentType() string {
@@ -109,9 +109,9 @@ func (o *GetNpaRulesIDResponse) GetRawResponse() *http.Response {
 	return o.RawResponse
 }
 
-func (o *GetNpaRulesIDResponse) GetGetNpaRulesID200ApplicationJSONObject() *GetNpaRulesID200ApplicationJSON {
+func (o *GetNpaRulesIDResponse) GetObject() *GetNpaRulesIDResponseBody {
 	if o == nil {
 		return nil
 	}
-	return o.GetNpaRulesID200ApplicationJSONObject
+	return o.Object
 }

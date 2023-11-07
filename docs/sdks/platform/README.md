@@ -36,14 +36,14 @@ func main() {
     )
 
     ctx := context.Background()
-    res, err := s.Platform.DeleteNpaRulesID(ctx, operations.DeleteNpaRulesIDRequest{
+    res, err := s.DeleteNpaRulesID(ctx, operations.DeleteNpaRulesIDRequest{
         ID: 324988,
     })
     if err != nil {
         log.Fatal(err)
     }
 
-    if res.DeleteNpaRulesID200ApplicationJSONObject != nil {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -85,7 +85,7 @@ func main() {
     )
 
     ctx := context.Background()
-    res, err := s.Platform.GetNpaRules(ctx, operations.GetNpaRulesRequest{})
+    res, err := s.GetNpaRules(ctx, operations.GetNpaRulesRequest{})
     if err != nil {
         log.Fatal(err)
     }
@@ -132,14 +132,14 @@ func main() {
     )
 
     ctx := context.Background()
-    res, err := s.Platform.GetNpaRulesID(ctx, operations.GetNpaRulesIDRequest{
+    res, err := s.GetNpaRulesID(ctx, operations.GetNpaRulesIDRequest{
         ID: 408556,
     })
     if err != nil {
         log.Fatal(err)
     }
 
-    if res.GetNpaRulesID200ApplicationJSONObject != nil {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -181,7 +181,7 @@ func main() {
     )
 
     ctx := context.Background()
-    res, err := s.Platform.PatchNpaRulesID(ctx, operations.PatchNpaRulesIDRequest{
+    res, err := s.PatchNpaRulesID(ctx, operations.PatchNpaRulesIDRequest{
         ID: 348436,
         NpaPolicyRequest: shared.NpaPolicyRequest{
             Description: nsnpagosdk.String("any"),
@@ -191,14 +191,14 @@ func main() {
             RuleData: &shared.NpaPolicyRuleData{
                 DlpActions: []shared.NpaPolicyRuleDlp{
                     shared.NpaPolicyRuleDlp{
-                        Actions: []shared.NpaPolicyRuleDlpActions{
-                            shared.NpaPolicyRuleDlpActionsAllow,
+                        Actions: []shared.Actions{
+                            shared.ActionsAllow,
                         },
                         DlpProfile: nsnpagosdk.String("Payment Card"),
                     },
                 },
                 JSONVersion: nsnpagosdk.Int64(3),
-                MatchCriteriaAction: &shared.NpaPolicyRuleDataMatchCriteriaAction{},
+                MatchCriteriaAction: &shared.MatchCriteriaAction{},
                 NetLocationObj: []string{
                     "190.123.150.10",
                     "190.218.0.0/16",
@@ -222,10 +222,10 @@ func main() {
                     "app1",
                     "app2",
                 },
-                PrivateAppsWithActivities: []shared.NpaPolicyRuleDataPrivateAppsWithActivities{
-                    shared.NpaPolicyRuleDataPrivateAppsWithActivities{
-                        Activities: []shared.NpaPolicyRuleDataPrivateAppsWithActivitiesActivities{
-                            shared.NpaPolicyRuleDataPrivateAppsWithActivitiesActivities{
+                PrivateAppsWithActivities: []shared.PrivateAppsWithActivities{
+                    shared.PrivateAppsWithActivities{
+                        Activities: []shared.Activities{
+                            shared.Activities{
                                 ListOfConstraints: []string{
                                     "string",
                                 },
@@ -248,7 +248,7 @@ func main() {
                 Version: nsnpagosdk.Int64(1),
             },
             RuleName: nsnpagosdk.String("vantest"),
-            RuleOrder: &shared.NpaPolicyRequestRuleOrder{
+            RuleOrder: &shared.RuleOrder{
                 Position: nsnpagosdk.Int64(5),
                 RuleID: nsnpagosdk.Int64(1),
                 RuleName: nsnpagosdk.String("api-policy-managed"),
@@ -259,7 +259,7 @@ func main() {
         log.Fatal(err)
     }
 
-    if res.PatchNpaRulesID200ApplicationJSONObject != nil {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -301,7 +301,7 @@ func main() {
     )
 
     ctx := context.Background()
-    res, err := s.Platform.PostNpaRules(ctx, operations.PostNpaRulesRequest{
+    res, err := s.PostNpaRules(ctx, operations.PostNpaRulesRequest{
         NpaPolicyRequest: shared.NpaPolicyRequest{
             Description: nsnpagosdk.String("any"),
             Enabled: nsnpagosdk.String("1"),
@@ -310,14 +310,14 @@ func main() {
             RuleData: &shared.NpaPolicyRuleData{
                 DlpActions: []shared.NpaPolicyRuleDlp{
                     shared.NpaPolicyRuleDlp{
-                        Actions: []shared.NpaPolicyRuleDlpActions{
-                            shared.NpaPolicyRuleDlpActionsAllow,
+                        Actions: []shared.Actions{
+                            shared.ActionsAllow,
                         },
                         DlpProfile: nsnpagosdk.String("Payment Card"),
                     },
                 },
                 JSONVersion: nsnpagosdk.Int64(3),
-                MatchCriteriaAction: &shared.NpaPolicyRuleDataMatchCriteriaAction{},
+                MatchCriteriaAction: &shared.MatchCriteriaAction{},
                 NetLocationObj: []string{
                     "190.123.150.10",
                     "190.218.0.0/16",
@@ -341,10 +341,10 @@ func main() {
                     "app1",
                     "app2",
                 },
-                PrivateAppsWithActivities: []shared.NpaPolicyRuleDataPrivateAppsWithActivities{
-                    shared.NpaPolicyRuleDataPrivateAppsWithActivities{
-                        Activities: []shared.NpaPolicyRuleDataPrivateAppsWithActivitiesActivities{
-                            shared.NpaPolicyRuleDataPrivateAppsWithActivitiesActivities{
+                PrivateAppsWithActivities: []shared.PrivateAppsWithActivities{
+                    shared.PrivateAppsWithActivities{
+                        Activities: []shared.Activities{
+                            shared.Activities{
                                 ListOfConstraints: []string{
                                     "string",
                                 },
@@ -367,7 +367,7 @@ func main() {
                 Version: nsnpagosdk.Int64(1),
             },
             RuleName: nsnpagosdk.String("vantest"),
-            RuleOrder: &shared.NpaPolicyRequestRuleOrder{
+            RuleOrder: &shared.RuleOrder{
                 Position: nsnpagosdk.Int64(5),
                 RuleID: nsnpagosdk.Int64(1),
                 RuleName: nsnpagosdk.String("api-policy-managed"),
