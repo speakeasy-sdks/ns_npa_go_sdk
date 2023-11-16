@@ -89,8 +89,10 @@ package main
 
 import (
 	"context"
+	"errors"
 	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/operations"
+	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/sdkerrors"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/shared"
 	"log"
 )
@@ -264,7 +266,6 @@ import (
 	"context"
 	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/operations"
-	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/shared"
 	"log"
 )
 

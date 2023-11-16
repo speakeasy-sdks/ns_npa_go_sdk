@@ -23,11 +23,11 @@ Delete a npa policy with rule id
 package main
 
 import(
-	"context"
-	"log"
-	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/shared"
+	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
+	"context"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -75,11 +75,11 @@ Get list of npa policies
 package main
 
 import(
-	"context"
-	"log"
-	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/shared"
+	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
+	"context"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -125,11 +125,11 @@ Get a npa policy based on policy rule id
 package main
 
 import(
-	"context"
-	"log"
-	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/shared"
+	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
+	"context"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -177,11 +177,11 @@ Patch a npa policy based on rule id
 package main
 
 import(
-	"context"
-	"log"
-	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/shared"
+	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
+	"context"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -300,11 +300,11 @@ Create a policy
 package main
 
 import(
-	"context"
-	"log"
-	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/shared"
+	nsnpagosdk "github.com/speakeasy-sdks/ns_npa_go_sdk"
+	"context"
 	"github.com/speakeasy-sdks/ns_npa_go_sdk/pkg/models/operations"
+	"log"
 )
 
 func main() {
