@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 )
 
+// NpaPolicyResponse400 - Invalid request
 type NpaPolicyResponse400 struct {
 	Result *string `json:"result,omitempty"`
 	Status *int64  `json:"status,omitempty"`
