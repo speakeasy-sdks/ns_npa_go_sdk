@@ -29,7 +29,6 @@ pkg/utils/utils.go
 /pkg/models/shared/npapolicyrequest.go
 /pkg/models/shared/security.go
 /pkg/models/sdkerrors/npapolicyresponse400.go
-USAGE.md
 docs/pkg/models/operations/deletenparulesidrequest.md
 docs/pkg/models/operations/status.md
 docs/pkg/models/operations/deletenparulesidresponsebody.md
@@ -66,4 +65,5 @@ docs/pkg/models/shared/npapolicyrequest.md
 docs/pkg/models/shared/security.md
 docs/pkg/models/sdkerrors/npapolicyresponse400.md
 docs/sdks/platform/README.md
+USAGE.md
 .gitattributes

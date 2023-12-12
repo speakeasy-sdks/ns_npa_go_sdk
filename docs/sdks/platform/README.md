@@ -32,7 +32,7 @@ import(
 
 func main() {
     s := nsnpagosdk.New(
-        nsnpagosdk.WithSecurity(""),
+        nsnpagosdk.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -84,7 +84,7 @@ import(
 
 func main() {
     s := nsnpagosdk.New(
-        nsnpagosdk.WithSecurity(""),
+        nsnpagosdk.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -134,7 +134,7 @@ import(
 
 func main() {
     s := nsnpagosdk.New(
-        nsnpagosdk.WithSecurity(""),
+        nsnpagosdk.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -186,7 +186,7 @@ import(
 
 func main() {
     s := nsnpagosdk.New(
-        nsnpagosdk.WithSecurity(""),
+        nsnpagosdk.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
@@ -309,7 +309,7 @@ import(
 
 func main() {
     s := nsnpagosdk.New(
-        nsnpagosdk.WithSecurity(""),
+        nsnpagosdk.WithSecurity("<YOUR_API_KEY_HERE>"),
     )
 
     ctx := context.Background()
