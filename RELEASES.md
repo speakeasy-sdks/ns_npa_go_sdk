@@ -149,3 +149,13 @@ Based on:
 - [go v0.5.0] .
 ### Releases
 - [Go v0.5.0] https://github.com/speakeasy-sdks/ns_npa_go_sdk/releases/tag/v0.5.0 - .
+
+## 2024-02-13 00:48:15
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.178.0 (2.253.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.5.1] .
+### Releases
+- [Go v0.5.1] https://github.com/speakeasy-sdks/ns_npa_go_sdk/releases/tag/v0.5.1 - .

@@ -197,71 +197,7 @@ func main() {
             Enabled: nsnpagosdk.String("1"),
             GroupID: nsnpagosdk.String("1"),
             GroupName: nsnpagosdk.String("My policy group"),
-            RuleData: &shared.NpaPolicyRuleData{
-                DlpActions: []shared.NpaPolicyRuleDlp{
-                    shared.NpaPolicyRuleDlp{
-                        Actions: []shared.Actions{
-                            shared.ActionsAllow,
-                        },
-                        DlpProfile: nsnpagosdk.String("Payment Card"),
-                    },
-                },
-                JSONVersion: nsnpagosdk.Int64(3),
-                MatchCriteriaAction: &shared.MatchCriteriaAction{},
-                NetLocationObj: []string{
-                    "190.123.150.10",
-                    "190.218.0.0/16",
-                },
-                OrganizationUnits: []string{
-                    "engineering/qa",
-                },
-                PrivateAppIds: []string{
-                    "100",
-                    "201",
-                },
-                PrivateAppTagIds: []string{
-                    "1",
-                    "2",
-                },
-                PrivateAppTags: []string{
-                    "tag1",
-                    "tag2",
-                },
-                PrivateApps: []string{
-                    "app1",
-                    "app2",
-                },
-                PrivateAppsWithActivities: []shared.PrivateAppsWithActivities{
-                    shared.PrivateAppsWithActivities{
-                        Activities: []shared.Activities{
-                            shared.Activities{
-                                ListOfConstraints: []string{
-                                    "string",
-                                },
-                            },
-                        },
-                        AppName: nsnpagosdk.String("[172.31.12.135]"),
-                    },
-                },
-                SrcCountries: []string{
-                    "US",
-                    "AF",
-                    "CN",
-                },
-                UserGroups: []string{
-                    "usergroup/group1",
-                },
-                Users: []string{
-                    "vphan@netskope.com",
-                },
-                Version: nsnpagosdk.Int64(1),
-            },
             RuleName: nsnpagosdk.String("vantest"),
-            RuleOrder: &shared.RuleOrder{
-                Position: nsnpagosdk.Int64(5),
-                RuleID: nsnpagosdk.Int64(1),
-                RuleName: nsnpagosdk.String("api-policy-managed"),
-            },
         },
     })
     if err != nil {
@@ -319,71 +255,7 @@ func main() {
             Enabled: nsnpagosdk.String("1"),
             GroupID: nsnpagosdk.String("1"),
             GroupName: nsnpagosdk.String("My policy group"),
-            RuleData: &shared.NpaPolicyRuleData{
-                DlpActions: []shared.NpaPolicyRuleDlp{
-                    shared.NpaPolicyRuleDlp{
-                        Actions: []shared.Actions{
-                            shared.ActionsAllow,
-                        },
-                        DlpProfile: nsnpagosdk.String("Payment Card"),
-                    },
-                },
-                JSONVersion: nsnpagosdk.Int64(3),
-                MatchCriteriaAction: &shared.MatchCriteriaAction{},
-                NetLocationObj: []string{
-                    "190.123.150.10",
-                    "190.218.0.0/16",
-                },
-                OrganizationUnits: []string{
-                    "engineering/qa",
-                },
-                PrivateAppIds: []string{
-                    "100",
-                    "201",
-                },
-                PrivateAppTagIds: []string{
-                    "1",
-                    "2",
-                },
-                PrivateAppTags: []string{
-                    "tag1",
-                    "tag2",
-                },
-                PrivateApps: []string{
-                    "app1",
-                    "app2",
-                },
-                PrivateAppsWithActivities: []shared.PrivateAppsWithActivities{
-                    shared.PrivateAppsWithActivities{
-                        Activities: []shared.Activities{
-                            shared.Activities{
-                                ListOfConstraints: []string{
-                                    "string",
-                                },
-                            },
-                        },
-                        AppName: nsnpagosdk.String("[172.31.12.135]"),
-                    },
-                },
-                SrcCountries: []string{
-                    "US",
-                    "AF",
-                    "CN",
-                },
-                UserGroups: []string{
-                    "usergroup/group1",
-                },
-                Users: []string{
-                    "vphan@netskope.com",
-                },
-                Version: nsnpagosdk.Int64(1),
-            },
             RuleName: nsnpagosdk.String("vantest"),
-            RuleOrder: &shared.RuleOrder{
-                Position: nsnpagosdk.Int64(5),
-                RuleID: nsnpagosdk.Int64(1),
-                RuleName: nsnpagosdk.String("api-policy-managed"),
-            },
         },
     })
     if err != nil {

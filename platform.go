@@ -172,9 +172,9 @@ func New(opts ...SDKOption) *Platform {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.5.0",
-			GenVersion:        "2.250.2",
-			UserAgent:         "speakeasy-sdk/go 0.5.0 2.250.2 1.0.0 github.com/speakeasy-sdks/ns_npa_go_sdk",
+			SDKVersion:        "0.5.1",
+			GenVersion:        "2.253.0",
+			UserAgent:         "speakeasy-sdk/go 0.5.1 2.253.0 1.0.0 github.com/speakeasy-sdks/ns_npa_go_sdk",
 			ServerDefaults: []map[string]string{
 				{
 					"basePath": "api/v2",
