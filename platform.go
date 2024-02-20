@@ -174,9 +174,9 @@ func New(opts ...SDKOption) *Platform {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.6.0",
-			GenVersion:        "2.258.2",
-			UserAgent:         "speakeasy-sdk/go 0.6.0 2.258.2 1.0.0 github.com/speakeasy-sdks/ns_npa_go_sdk",
+			SDKVersion:        "0.6.1",
+			GenVersion:        "2.263.3",
+			UserAgent:         "speakeasy-sdk/go 0.6.1 2.263.3 1.0.0 github.com/speakeasy-sdks/ns_npa_go_sdk",
 			ServerDefaults: []map[string]string{
 				{
 					"basePath": "api/v2",
@@ -225,12 +225,12 @@ func (s *Platform) DeleteNpaRulesID(ctx context.Context, request operations.Dele
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
 
-	client := s.sdkConfiguration.SecurityClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.SecurityClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -253,7 +253,6 @@ func (s *Platform) DeleteNpaRulesID(ctx context.Context, request operations.Dele
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.DeleteNpaRulesIDResponse{
@@ -324,12 +323,12 @@ func (s *Platform) GetNpaRules(ctx context.Context, request operations.GetNpaRul
 		return nil, fmt.Errorf("error populating query params: %w", err)
 	}
 
-	client := s.sdkConfiguration.SecurityClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.SecurityClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -352,7 +351,6 @@ func (s *Platform) GetNpaRules(ctx context.Context, request operations.GetNpaRul
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetNpaRulesResponse{
@@ -423,12 +421,12 @@ func (s *Platform) GetNpaRulesID(ctx context.Context, request operations.GetNpaR
 		return nil, fmt.Errorf("error populating query params: %w", err)
 	}
 
-	client := s.sdkConfiguration.SecurityClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.SecurityClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -451,7 +449,6 @@ func (s *Platform) GetNpaRulesID(ctx context.Context, request operations.GetNpaR
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetNpaRulesIDResponse{
@@ -528,12 +525,12 @@ func (s *Platform) PatchNpaRulesID(ctx context.Context, request operations.Patch
 		return nil, fmt.Errorf("error populating query params: %w", err)
 	}
 
-	client := s.sdkConfiguration.SecurityClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.SecurityClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -556,7 +553,6 @@ func (s *Platform) PatchNpaRulesID(ctx context.Context, request operations.Patch
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PatchNpaRulesIDResponse{
@@ -633,12 +629,12 @@ func (s *Platform) PostNpaRules(ctx context.Context, request operations.PostNpaR
 		return nil, fmt.Errorf("error populating query params: %w", err)
 	}
 
-	client := s.sdkConfiguration.SecurityClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.SecurityClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -661,7 +657,6 @@ func (s *Platform) PostNpaRules(ctx context.Context, request operations.PostNpaR
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PostNpaRulesResponse{
