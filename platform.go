@@ -173,9 +173,9 @@ func New(opts ...SDKOption) *Platform {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.7.1",
-			GenVersion:        "2.280.6",
-			UserAgent:         "speakeasy-sdk/go 0.7.1 2.280.6 1.0.0 github.com/speakeasy-sdks/ns_npa_go_sdk",
+			SDKVersion:        "0.7.2",
+			GenVersion:        "2.283.1",
+			UserAgent:         "speakeasy-sdk/go 0.7.2 2.283.1 1.0.0 github.com/speakeasy-sdks/ns_npa_go_sdk",
 			ServerDefaults: []map[string]string{
 				{
 					"basePath": "api/v2",
@@ -210,6 +210,7 @@ func (s *Platform) DeleteNpaRulesID(ctx context.Context, request operations.Dele
 	hookCtx := hooks.HookContext{
 		Context:        ctx,
 		OperationID:    "delete_/npa/rules/{id}",
+		OAuth2Scopes:   []string{},
 		SecuritySource: s.sdkConfiguration.Security,
 	}
 
@@ -312,6 +313,7 @@ func (s *Platform) GetNpaRules(ctx context.Context, request operations.GetNpaRul
 	hookCtx := hooks.HookContext{
 		Context:        ctx,
 		OperationID:    "get_/npa/rules",
+		OAuth2Scopes:   []string{},
 		SecuritySource: s.sdkConfiguration.Security,
 	}
 
@@ -418,6 +420,7 @@ func (s *Platform) GetNpaRulesID(ctx context.Context, request operations.GetNpaR
 	hookCtx := hooks.HookContext{
 		Context:        ctx,
 		OperationID:    "get_/npa/rules/{id}",
+		OAuth2Scopes:   []string{},
 		SecuritySource: s.sdkConfiguration.Security,
 	}
 
@@ -524,6 +527,7 @@ func (s *Platform) PatchNpaRulesID(ctx context.Context, request operations.Patch
 	hookCtx := hooks.HookContext{
 		Context:        ctx,
 		OperationID:    "patch_/npa/rules/{id}",
+		OAuth2Scopes:   []string{},
 		SecuritySource: s.sdkConfiguration.Security,
 	}
 
@@ -636,6 +640,7 @@ func (s *Platform) PostNpaRules(ctx context.Context, request operations.PostNpaR
 	hookCtx := hooks.HookContext{
 		Context:        ctx,
 		OperationID:    "post_/npa/rules",
+		OAuth2Scopes:   []string{},
 		SecuritySource: s.sdkConfiguration.Security,
 	}
 

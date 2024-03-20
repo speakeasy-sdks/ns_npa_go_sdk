@@ -3,10 +3,10 @@ id: 057c3420-cffc-47a1-934f-bb5aa693a18b
 management:
   docChecksum: 2ce558252cc48bc50ccfd24efecd3cf4
   docVersion: 1.0.0
-  speakeasyVersion: 1.207.1
-  generationVersion: 2.280.6
-  releaseVersion: 0.7.1
-  configChecksum: 252bc128bf5d1dc88718e497abb71b38
+  speakeasyVersion: 1.213.0
+  generationVersion: 2.283.1
+  releaseVersion: 0.7.2
+  configChecksum: def4cfe5a3d9334959fac48d7e272245
   repoURL: https://github.com/speakeasy-sdks/ns_npa_go_sdk.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/ns_npa_go_sdk
@@ -14,7 +14,7 @@ management:
 features:
   go:
     core: 3.4.4
-    globalSecurity: 2.82.8
+    globalSecurity: 2.82.9
     globalServerURLs: 2.82.2
     responseFormat: 0.1.0
 generatedFiles:
